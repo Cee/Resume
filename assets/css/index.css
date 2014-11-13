@@ -1,0 +1,42 @@
+/** {
+	font-family: "LantingHei SC";
+	background: url('..pic/bg.png') repeat-x repeat-y;
+}*/
+
+body {
+	margin-top: 10px;
+	font-family: "LantingHei SC";
+	/*background: url('../pic/bg_pink.png');*/
+	line-height: 24px;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+.container {
+	 max-width: 55%;
+}
+
+.line {
+	background: url('../pic/line.png') repeat-x;
+	min-height: 4px;
+	position: relative;
+	margin: .33em 0;
+}
+
+.heading {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: .33em;
+	padding-bottom: .33em;
+}
+
+a, a:link, a:visited {
+	color: black;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: green;
+}
