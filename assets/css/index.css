@@ -6,7 +6,7 @@
 body {
 	margin-top: 1.67em;
 	font-family: "LantingHei SC";
-	/*background: url('../pic/bg_pink.png');*/
+/*	background: url('../pic/bg_pink_pants.png');*/
 	line-height: 24px;
 }
 
@@ -17,6 +17,7 @@ h1 {
 
 .container {
 	 max-width: 55%;
+	 min-width: 740px;
 }
 
 .line {
@@ -24,6 +25,7 @@ h1 {
 	min-height: 4px;
 	position: relative;
 	margin: .22em 0;
+	padding: 0;
 }
 
 .heading {
@@ -36,6 +38,7 @@ h1 {
 a, a:link, a:visited {
 	color: black;
 	text-decoration: underline;
+
 }
 
 a:hover {
