@@ -109,6 +109,12 @@ p.contact {
     }
 }
 
+@media screen and (max-width: 767px){
+    .container {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
 /***** ANIMATIONS *****/
 .container {
     -webkit-animation: fadein .7s; /* Safari, Chrome and Opera > 12.1 */
