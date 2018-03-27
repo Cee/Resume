@@ -1,0 +1,201 @@
+%-------------------------
+% Resume in Latex
+% Author : Tianyu Wang
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeActivity}[3]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+	  \textbf{\small{#1}} & \textit{\small{#2, #3}} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://cee.moe/}{\Large Tianyu Wang}} & \textbf{Phone}: +1 929-253-1696 \\  
+  \textit{A self-motivated full-stack developer and designer.} & \textbf{E-mail}: \href{mailto:ceecirno@gmail.com}{ceecirno@gmail.com} \\
+  \href{https://github.com/Cee}{https://github.com/Cee} & \textbf{Address}: 33 Bond St., Apt 1201, Brooklyn, NY, 11201 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New York University}{Brooklyn, NY}
+      {Master of Science in Computer Science;  GPA: 4.0}{Sep 2017 -- Present}
+      \resumeItemListStart
+		\item \small{Teaching assistant for class GY-CS-6233 Introduction to Operating Systems.}
+	  \resumeItemListEnd
+    \resumeSubheading
+      {Nanjing University}{Nanjing, China}
+      {Bachelor of Engineering in Software Engineering;  GPA: 3.42 (4.27/5.0);  Ranking: 12/238}{Sep 2012 -- June 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{http://raventech.com}{RavenTech}}{Beijing, China}
+      {Growth Hacker}{July 2016 - June 2017}
+      \resumeItemListStart
+		\item \small{Participated in the \href{https://itunes.apple.com/us/app/ok-man/id1179211073}{"OK MAN"} app to develop intelligent remote controller that supports voice and text inputs to control home appliances via Raven H-1.}
+		\item \small{Optimized UI for better user experience. Using UIBezierPath to flat a 3D object to 2D, also creating animations with Core Animation.}
+		\item \small{Implemented an encryption and checksum algorithm, allowing Raven H-1 to connect to the Internet via bluetooth.}
+		\item \small{Lead for an app named \href{https://itunes.apple.com/cn/app/inflow/id1164994325}{"inFlow"}, including creating Python tools for Weibo and news data crawling, extracting news sentiment using \textit{Jieba} segmentation, as well as making sentiment analysis through NLP.}
+%      	\item \small{Involved in crafting Raven H-1, which is a set of smart-home control center. Accessories include a set-top speaker, hub and screen.}
+        \resumeItem{Acquisition}
+          {RavenTech has been acquired by Baidu in March, 2017, helping Baidu ramp up smart home efforts.}
+      \resumeItemListEnd
+      
+	\resumeSubheading
+      {\href{http://kikbug.net}{Kikbug Mobile Testing Platform}}{Nanjing, China}
+      {Research Assistant, Supervised by Professor Zhenyu Chen}{Sep 2015 - June 2016}
+      \resumeItemListStart
+        \item \small{Responsible for the development iOS client app that supports assigning testing tasks, collecting testing results, and other management functions for crowdsourcing testing.}
+        \item \small{Wrote scripts to automate the analysis of test logs and app crashing.}
+        \item \small{Used iMobileDevice to distribute testing scripts and captured information of testing devices simultaneously.}
+%       \item \small{Developed the Kikbug Mobile Testing Platform for crowdsourcing testing that enables developers to have mobile software tested across devices simultaneously.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {\href{http://pudding.cc}{Pudding Anime}}{Shanghai, China}
+      {iOS Developer, Internship}{Dec 2014 - Apr 2015}
+      \resumeItemListStart
+        \item \small{Employed ReactiveCocoa and the MVVM design pattern to iOS app.}
+        \item \small{Worked on adapting Auto Layout to iPhone and iPad UIs.}
+        \item \small{Enhanced user experience on audio and video players. Allowing users to send \textit{danmaku}s while playing.}
+      \resumeItemListEnd
+   
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://itunes.apple.com/cn/app/id1171614122}{QReader}}
+      {A macOS app that can recognize QR code and bar code. Written with \textit{totally} Swift.}
+	\resumeSubItem{\href{http://ela.build/oneclock}{One Clock}}
+      {Display elegant world clock in menu bar. Still work in progress and using Swift too.}
+    \resumeSubItem{\href{https://github.com/Cee/ColorMix}{Co!orMix}}
+      {A tiny but interesting game all about colors and your reflexes. Open-sourced at \href{https://github.com/Cee/ColorMix}{GitHub.}}
+    \resumeSubItem{\href{https://github.com/PerfectFreeze}{PerfectFreeze}}
+      {My GitHub lab, devoting on crafting useful frameworks on iOS/macOS.}
+    \resumeSubItem{\href{http://next.36kr.com}{36Kr Next}}
+      {The Chinese version of Product Hunt, providing latest products every day.}
+  \resumeSubHeadingListEnd
+
+
+%--------EX-CURRICULAR ACTIVITIES------------
+\section{Ex-Curricular Activities \& Awards}
+  \resumeSubHeadingListStart
+  	\vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small{\textbf{Core Translator} at \href{http://swift.gg}{SwiftGG}} & \textit{\small{Sep 2015 -- Present}} \\
+    \end{tabular*}\vspace{-7pt}
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small{\textbf{Winner of Healthcare Track} at HackNYU 2018} & \textit{\small{Mar 2018}} \\
+    \end{tabular*}\vspace{-7pt}
+  	\vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small{\textbf{Graduate Student Scholarship} at New York University} & \textit{\small{Sep 2017}} \\
+    \end{tabular*}\vspace{-7pt}
+	\vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small{\textbf{3rd Prize} at i-Lab Shanghai Hackathon} & \textit{\small{Oct 2016}} \\
+    \end{tabular*}\vspace{-7pt}
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small{\textbf{Core Team Member} at LilyStudio} & \textit{\small{Mar 2013 -- June 2016}} \\
+    \end{tabular*}\vspace{-7pt}
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small{\textbf{Lilith Scholarship} at Nanjing University} & \textit{\small{Sep 2015}} \\
+    \end{tabular*}\vspace{-7pt}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Swift, Objective-C, Java, HTML/CSS, JavaScript, Python, SQL, C/C++}
+    }
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
